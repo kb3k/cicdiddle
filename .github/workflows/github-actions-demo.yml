@@ -15,5 +15,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: curl http://127.0.0.1:5000/
+      - run: docker run -p 5001:5001 -d --name demo{date "+%F-%T"} week7:0.0.1
+      - run: curl http://127.0.0.1:5001/
 
