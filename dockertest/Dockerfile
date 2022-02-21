@@ -1,6 +1,6 @@
 FROM oktaadmin/awscli
 
-ENV FLASK_APP=app
+ENV FLASK_APP=dockertest/app
 ENV FLASK_ENV=production
 RUN echo "#!/bin/bash\n" > /startscript.sh
 RUN echo "mkdir github\n" >> /startscript.sh
