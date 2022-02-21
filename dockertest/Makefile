@@ -1,12 +1,12 @@
 
 setup:
-	pip install Flask
+	pip install -r requirements.txt
 
 build:
 	echo "this line does absolutely nothing in particular"
 
 run:
-	python3 app.py
+	flask run
 
 dockertest:
 	make setup
