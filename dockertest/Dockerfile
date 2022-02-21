@@ -1,4 +1,4 @@
-FROM oktaadmin/awscli
+FROM python:3.7-slim
 
 ENV FLASK_APP=app
 ENV FLASK_ENV=production
